@@ -1,6 +1,8 @@
 #include <iostream>
+#include <memory>
 #include "car.h"
 #include "rectangle.h"
+#include "student.h"
 
 using namespace std;
 
@@ -30,5 +32,12 @@ int main()
     delete objRectangle3;
     objRectangle3=nullptr;
 
+
+    unique_ptr<Student> studentobj = make_unique<Student>("Jarkko", 1, 8.4);
+    cout << "nimi: " << studentobj->getName() << endl;
+    cout << "opiskelijanumero: " << studentobj->getStudentNumber() << endl;
+    cout << "keskiarvo: " << studentobj->getAverage() << endl;
+
+    //studentobj->printStudentData();
     return 0;
 }

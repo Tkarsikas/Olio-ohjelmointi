@@ -9,16 +9,19 @@ class Student
 private:
     string name;
     int studentNumber;
-    float average;
+    double average;
 public:
-    Student();
+    Student(string, int, double);
     ~Student();
     string getName() const;
     void setName(const string &newName);
     int getStudentNumber() const;
     void setStudentNumber(int newStudentNumber);
-    float getAverage() const;
+    double getAverage() const;
     void setAverage(double newAverage);
+    Student();
+    void printStudentData();
+
 };
 
 #endif // STUDENT_H

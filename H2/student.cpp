@@ -2,6 +2,17 @@
 
 Student::Student() {}
 
+Student::Student(string n, int nSN, double nA) {
+    name=n;
+    studentNumber=nSN;
+    average=nA;
+}
+
+void Student::printStudentData(){
+    cout << " opiskelijan tiedot: \n nimi:" << name << "\n opiskelijan numero: " <<  studentNumber << "\n keskiarvo:" <<  average << endl;
+}
+
+
 Student::~Student()
 {
 
@@ -27,7 +38,7 @@ void Student::setStudentNumber(int newStudentNumber)
     studentNumber = newStudentNumber;
 }
 
-float Student::getAverage() const
+double Student::getAverage() const
 {
     return average;
 }
