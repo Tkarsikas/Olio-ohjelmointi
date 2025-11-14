@@ -2,7 +2,9 @@
 #include <iostream>
 
 
-Aliluokka::Aliluokka() {}
+Aliluokka::Aliluokka() {
+    std::cout << "aliluokan olio luotiin" << std::endl;
+}
 
 void Aliluokka::asetaNumerot(int pub, int pro, int pri)
 {
