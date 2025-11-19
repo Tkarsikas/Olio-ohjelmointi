@@ -11,8 +11,10 @@ protected:
     string name;
 public:
     Chef(string);
+    ~Chef();
     void makeSalad();
-    void MakeSoup();
+    void makeSoup();
+
 };
 
 #endif // CHEF_H

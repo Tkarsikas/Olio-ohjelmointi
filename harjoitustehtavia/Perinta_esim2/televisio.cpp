@@ -12,7 +12,7 @@ void Televisio::setRuudunKoko(double newRuudunKoko)
 
 void Televisio::tulostaTiedot()
 {
-
+    cout << "Tuote:" << getNimi() << " hinta:" << getHinta() << " ruudunkoko:" << getRuudunKoko() << endl;
 }
 
 Televisio::Televisio(string n, double h, double r): Tuote(n,h) {

@@ -22,7 +22,7 @@ void Tuote::setHinta(double newHinta)
 
 void Tuote::tulostaTiedot()
 {
-    cout << "tuote on " << nimi << " hinta on " << hinta << endl;
+    cout << "tuote:" << nimi << " hinta:" << hinta << endl;
 }
 
 Tuote::Tuote(string n, double h) {

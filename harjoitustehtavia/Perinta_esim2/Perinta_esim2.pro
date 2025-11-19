@@ -5,9 +5,11 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
+        pesukone.cpp \
         televisio.cpp \
         tuote.cpp
 
 HEADERS += \
+    pesukone.h \
     televisio.h \
     tuote.h
