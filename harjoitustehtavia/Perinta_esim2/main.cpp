@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <bits/unique_ptr.h>
 #include "televisio.h"
 #include "pesukone.h"
 using namespace std;
@@ -33,6 +34,21 @@ int main()
     for(auto TL: tuoteLista){
         TL->tulostaTiedot();
     }
+    cout << endl;
     //auto sanan ansiosta kääntäjä tunnistaa olion luokan
+
+    //smart pointer käyttö
+
+    vector<unique_ptr<Tuote>> tuoteVektori;
+    tuoteVektori.emplace_back(make_unique<Tuote>("tuoli", 54));
+    tuoteVektori.emplace_back(make_unique<Televisio>("Sony", 54, 75));
+    tuoteVektori.emplace_back(make_unique<Pesukone>("Samsung", 850, 1000, 8));
+
+    cout << "smart pointer esimerkki" << endl;
+    for(auto& x : tuoteVektori ){
+        x->tulostaTiedot();
+    }
+
+
     return 0;
 }
