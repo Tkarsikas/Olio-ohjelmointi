@@ -1,5 +1,16 @@
 #include "engine.h"
 
+Engine::Engine()
+{
+
+}
+
+Engine::Engine(int hp, double d)
+{
+    horsepower=hp;
+    displacement=d;
+}
+
 int Engine::getHorsepower() const
 {
     return horsepower;
@@ -20,4 +31,4 @@ void Engine::setDisplacement(double newDisplacement)
     displacement = newDisplacement;
 }
 
-Engine::Engine() {}
+

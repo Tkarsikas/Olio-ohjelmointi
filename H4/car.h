@@ -3,6 +3,11 @@
 
 #include "engine.h"
 #include "wheel.h"
+#include <string>
+#include <iostream>
+
+using namespace std;
+
 class Car
 {
 private:
