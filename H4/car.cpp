@@ -39,7 +39,7 @@ Car::Car(string m, string b) {
 }
 
 
-void Car::setWheel(int s, string t)
+void Car::setWheel(int s, const string t)
 {
     this->objWheel1.setSize(s);
     this->objWheel1.setType(t);

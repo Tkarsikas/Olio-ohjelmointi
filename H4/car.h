@@ -23,7 +23,7 @@ public:
     Car();
     Car(string,string);
 
-    void setWheel(int, string);
+    void setWheel(int, const string);
     void setEngine(int , double);
     string getModel() const;
     void setModel(const string &newModel);
