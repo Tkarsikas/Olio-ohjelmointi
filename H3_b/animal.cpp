@@ -7,7 +7,7 @@ Animal::Animal()
 
 
 
-Animal::~Animal()
+Animal:: ~Animal()
 {
     cout << "Animal destruktori" << endl;
 }
