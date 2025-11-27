@@ -27,6 +27,8 @@ public:
 
     void setEngine(int, double);
     void setWheel(int, string);
+
+    void printDetails();
 };
 
 #endif // CAR_H
