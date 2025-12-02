@@ -1,2 +1,5 @@
 */build/ 
 */*.user
+*/.qtcreator/
+*.pro.user
+*.pro.user.*
