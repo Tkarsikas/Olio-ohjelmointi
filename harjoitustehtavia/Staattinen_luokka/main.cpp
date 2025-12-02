@@ -12,7 +12,7 @@ int main()
     cin >> number;
     result=MyStaticClass::doubleMe(number);
     cout << "tuplattuna luku on " << result << endl;
-
+    //ei voida luoda koska luokan creator=delete
     //MyStaticClass objclass;
     return 0;
 }
