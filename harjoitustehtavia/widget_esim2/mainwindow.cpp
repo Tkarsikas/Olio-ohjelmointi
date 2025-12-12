@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->btnOpenForm1, &QPushButton::clicked, this, &MainWindow::openForm1);
     connect(ui->btnOpenForm2, &QPushButton::clicked, this, &MainWindow::openForm2);
     connect(ui->btnSetName, &QPushButton::clicked, this, &MainWindow::setName);
+    connect(ui->btnShowName, &QPushButton::clicked, this, &MainWindow::getName);
     objectSingleton = Person::getInstance();
 
 }
@@ -39,6 +40,11 @@ void MainWindow::openForm2()
 void MainWindow::setName()
 {
     objectSingleton->setName(ui->textName->text());
+}
+
+void MainWindow::getName()
+{
+    ui->labelName->setText(objectSingleton->getName());
 }
 
 

@@ -27,5 +27,6 @@ private slots:
     void openForm1();
     void openForm2();
     void setName();
+    void getName();
 };
 #endif // MAINWINDOW_H
