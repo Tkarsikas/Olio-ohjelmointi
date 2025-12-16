@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     connect(ui->btnGetPersons, &QPushButton::clicked, this, &MainWindow::getPersonsSlot);
     connect(ui->btnShowPersons, &QPushButton::clicked, this, &MainWindow::personToListSlot);
-
+    ui->btnShowPersons->setEnabled(false);
 }
 
 MainWindow::~MainWindow()
@@ -56,8 +56,7 @@ void MainWindow::showPersonSlot()
         }
     }
 
-
-
+    ui->btnShowPersons->setEnabled(true);
     reply->deleteLater();
     manager->deleteLater();
 }
