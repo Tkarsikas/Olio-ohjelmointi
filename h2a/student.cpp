@@ -2,6 +2,7 @@
 
 Student::Student() {}
 
+
 Student::Student(string n, int nSN, double nA) {
     name=n;
     studentNumber=nSN;
